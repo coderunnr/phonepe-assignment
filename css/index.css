@@ -66,7 +66,7 @@ body {
     align-items: center;
     background-color: white;
     padding: 2.5%;
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034)
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034);
   }
   .input-container {
     width: 90%;
@@ -84,4 +84,133 @@ body {
   display: flex;
   align-items: center;
   margin-top: 24px;
+}
+
+.search-container {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-start-container {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.search-end-container {
+  width: 100%;
+}
+
+.search-start {
+  width: 100%;
+}
+
+.search-end {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .search-container {
+    min-width: 600px;
+    display: flex;
+    align-items: center;
+  }
+  .search-input-container {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .search-start-container {
+    flex: 1;
+    margin-right: 8px;
+    margin-top: 8px;
+    background: white;
+    padding: 16px 24px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034);
+  }
+
+  .search-end-container {
+    flex: 1;
+    margin-left: 8px;
+    margin-top: 8px;
+    background: white;
+    padding: 16px 24px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034)
+  }
+}
+
+.search-result-container {
+  display: grid;
+  grid-template-columns: auto;
+  margin-top: 16px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .search-result-container {
+    grid-template-columns: auto auto;
+    grid-column-gap: 16px;
+    max-width: 850px;
+  }
+}
+
+#search-btn {
+  margin-top: 8px;
+}
+
+.search-result-item {
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 8px;
+  margin-right: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .search-result-item {
+    width: auto;
+  }
+}
+
+.item-result-icon {
+  font-size: 48px !important;
+  margin-right: 8px;
+}
+
+.search-result-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-result-eta {
+  font-style: italic;
+  color: rgb(197, 194, 194);
+}
+
+.search-result-bold {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.search-result-rating {
+  display: flex;
+  flex: 1;
+  align-self: flex-start;
+  justify-content: center;
+}
+
+.search-result-rating > span {
+  font-size: 16px;
+  color: rgb(172, 169, 169);
 }
