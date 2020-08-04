@@ -5,7 +5,7 @@ const ListItem = (item, click) => {
   return {
     render: `
     <div id="item-${id}" class="search-result-item">
-    <span class="material-icons item-result-icon">
+    <span id="item-${id}-icon" class="material-icons item-result-icon">
       account_circle
     </span>
       <div>

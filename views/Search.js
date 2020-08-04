@@ -10,7 +10,7 @@ const Search = () => {
   let lastSelectedId = 'item-1';
 
   const onSearchClick = () => {
-    if (true || document.getElementById('search-start').value && document.getElementById('search-end').value) {
+    if (document.getElementById('search-start').value && document.getElementById('search-end').value) {
       document.querySelector('.search-result-container').innerHTML = items.map((item) => {
         return item.render;
       }).join('\n')
@@ -23,7 +23,12 @@ const Search = () => {
   };
 
   const onConfirmRide = () => {
-
+    const element = document.getElementById(lastSelectedId);
+    element.classList.remove('selected-item');
+    element.style = 'background: #9999ff; color: white';
+    element.getElementsByClassName('item-result-icon')[0].innerHTML = 'check_circle';
+    element.getElementsByClassName('search-result-rating')[0].innerHTML = `<span class="material-icons item-result-icon-call">call</span>`;
+    
   };
 
   const onListItemClick = (id) => () => {
