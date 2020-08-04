@@ -1,0 +1,87 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #F5F5F5;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 8px 6px -6px rgb(153, 152, 152);
+  background-color: white;
+}
+
+.header .header-icon {
+  font-size: 48px;
+  margin-right: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header .header-icon {
+    font-size: 48px;
+  }
+}
+
+.header .header-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.login-container {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container {
+  width: 90%;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .login-container {
+    margin-top: 5%;
+    padding: 8px;
+    align-self: center;
+    min-width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 2.5%;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034)
+  }
+  .input-container {
+    width: 90%;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+}
+
+#forgot-password {
+  align-self: flex-start;
+}
+
+.auth-secondary-action {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
