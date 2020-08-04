@@ -1,10 +1,10 @@
-const ListItem = (item) => {
+const ListItem = (item, click) => {
   
   const { name, id, eta, rating, route, car, available } = item;
 
   return {
     render: `
-    <div id="${id}" class="search-result-item">
+    <div id="item-${id}" class="search-result-item">
     <span class="material-icons item-result-icon">
       account_circle
     </span>
@@ -35,7 +35,8 @@ const ListItem = (item) => {
     </div>
     `,
     afterRender: () => {
-
+      const itemId = `item-${id}`;
+      document.getElementById(itemId).addEventListener('click', click(itemId));
     }
   };
 }
