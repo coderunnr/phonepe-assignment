@@ -1,4 +1,4 @@
-# phonepe-assignment
+# vanillajs-modular-example
 
 Steps:
 
